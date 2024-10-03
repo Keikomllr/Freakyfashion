@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    
+    <meta name="lists of products" content="lists of products">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Store icon-->
+    <link rel="icon" href="images/icon.png" type="image/storeicon"> 
+
+    <link rel="stylesheet" href="listproduktstyle.css" text="text/css">
+    <title>Administration</title>
+    
+</head>
+
+<body>
+    <div class="list-container">
+    
+        <div class="item header">
+            <header class="listprodukt_header">
+                <h1>Administration</h1>
+            </header> 
+        </div>
+
+        
+         <div class="item sidebar">
+            <aside>
+                <h3>produkter</h3>
+            </aside>
+        </div>
+
+        <section class="item main">                          
+            
+            <h2>Produkter</h2>
+            <!--Submit button for new product -->
+                <div class="nyprodukt-btn">
+                    <a href="#nyaprodukter"><input type="submit" name="btn_confirm" value="Ny produkt" class="button-6"></a>                  
+                </div>
+            <table  class="ny_produkt_form" >
+                
+                <tbody> 
+                    <tr>
+                        <th>Namn</th>
+                        <th>SKU</th>
+                        <th>Pris</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Svart T-Shirt</td>
+                        <td>AAA111</td>
+                        <td>199</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Vit T-Shirt</td>
+                        <td>BBB111</td>
+                        <td>199</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">...</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2"></td>
+                    </tr>
+                </tbody>
+             </table>
+        </section>
+        
+      <section class="item footer">
+        <footer>
+
+        </footer>  
+      </section>
+    </div>    
+</body>
+</html>

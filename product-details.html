@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="product_details" content="Freaky fashion Product details"> 
+    <title>Product details</title>
+    <link rel="icon" href="images/icon.png" type="image/storeicon">  <!--Store icon-->
+    <link rel="stylesheet" a href="freaky.css"> 
+</head>
+<body>
+
+    <header>
+        <div class="head-container">
+             <div class="headitem-1">  
+                 <img src="images/logotype.jpg"  alt="logotype"> <!--LOGOTYPE-->
+             </div>
+
+             <div class="head-container2">
+                 <div class="headitem-2"> <!--search products from here-->
+                     <input type="search" placeholder="Sök produkt">            
+                 </div>
+                 <div class="headitem-3"> <!--favorite icon top-->
+                     <a href="http://localhost.5000/favorit/" target="_blank"><img src="images/heartblack.png" alt="favorit_icon"></a>
+                     <!--Open the link with a new tab-->
+                 </div>
+                 <div class="headitem-4"> <!--shopping icon-->
+                     <a href="http://localhost.5000/shopping/" target="_blank"><img src="images/shoppingbag.png" alt="shopping_icon"></a>
+                 </div>    
+             </div>
+        </div> 
+ 
+         <nav aria-rabel="primary-navigation">                      <!--navigater-->            
+              <ul>
+                 <li>
+                     <a href="#news">Nyheter</a>
+                 </li>
+                 <li>
+                     <a href="#toplist">Topplistan</a>
+                 </li>
+                 <li>
+                     <a href="#sale">Rea</a>
+                 </li>
+                 <li>
+                     <a href="#campain">Kampanjer</a>
+                 </li>
+             </ul>
+         </nav>   
+     </header>
+ 
+   
+    <main>
+
+        <section id="customer-service">  
+            <img src="images/chat.png" alt="chat">
+        </section>
+
+        <article class="product_detail">
+           <div class="detail_container">
+                <div class="detail_pic">
+                    <a href="#order"> <!--Lead to link-->   
+                        <div class="blackdress-container">
+                            <!--img changes by placing the mouse over the image-->    
+                            <img src="images/blackdress-zoom.jpeg" alt="Black Dress" class="default-blackdress">
+                            <img src="images/blackdress.jpeg" alt="Hovered  Black Dress" class="hover-blackdress">
+                            <span class="detail_heart span0">
+                                <img src="images/heart.png" alt="heart">
+                            </span> 
+                        </div>       
+                    </a>    
+                </div>
+
+                <div class="detail_text">  
+                    <h2>Svart klänning</h2>
+             
+                    <span class="levis">Levis</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum itaque corporis quod soluta maiores? Iste quibusdam atque fuga. Nesciunt consequatur velit quam ad amet omnis. Cumque reprehenderit molestiae placeat quasi?</p>
+                    
+                    <p class="detail_price">
+                        499 SEK</p>
+
+                    <input type="submit" name="btn_confirm" value="Lägg i varukorg" class="button-28">  
+                </div>   
+            </div>
+        </article>     
+        
+
+        <!--Liknande produkter-->
+        <article class="similar">
+            <h3>Liknande produkter</h3>
+           <div class="similar_container">
+                <a href="#order">
+                    <div class="similar_product">                   
+                        <img
+                        src="images/dress-yellow-flower.jpeg"
+                        alt="Flower Yellow Dress"/>                   
+                        <span class="span1_s">Blomklänning </span>
+                        <span class="span2_s">499 SEK</span>
+                        <br>
+                        <span class="span3_s">Levis</span>
+                    </div>
+                </a>    
+
+                <a href="#order">
+                    <div class="similar_product">                   
+                        <img
+                        src="images/dress-blue-flower.jpeg"
+                        alt="T-shirt"/>                   
+                        <span class="span1_s"> Blomklänning</span>
+                        <span class="span2_s">499 SEK</span>
+                        <br>
+                        <span class="span3_s">Levis</span>
+                    </div>
+                </a>         
+
+                <a href="#order">
+                    <div class="similar_product">                   
+                        <img
+                        src="images/dress-purple-flower.jpeg"
+                        alt="T-shirt"/>                   
+                        <span class="span1_s"> Blomklänning</span>
+                        <span class="span2_s">499 SEK</span>
+                        <br>
+                        <span class="span3_s">Levis</span>
+                    </div>
+                </a>    
+             </div>            
+        </article>
+          
+        <aside class="side-container">
+            <ul>
+                <li>
+                    <img src="images/global.png" alt="global">
+                    <span>Gratis frakt och returer</span>
+                </li> 
+                <li>
+                <img src="images/aircraft.png" alt="aircraft">
+                <span>Expressfrakt</span>
+                </li> 
+                <li>
+                    <img src="images/safe.png" alt="safe">
+                    <span>Säkra betalningar</span>
+                </li> 
+                <li>
+                    <img src="images/smile.png" alt="smile">
+                    <span>Nyheter varje dag</span>
+                </li>   
+
+            </ul>
+        </aside>
+
+     </main>
+            
+            <footer>
+
+                <!--Accordion Komponent-->
+                <div class="accordion">
+                  <div class="accordion-item">
+                      <button class="accordion-button">Shopping</button>
+                      <div class="accordion-content">
+                          <ul>
+                              <li>Vinterjackor</li>
+                              <li>Pufferjackor</li>
+                              <li>Kappa</li>
+                              <li>Trenchcoats</li>
+                            </ul>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <button class="accordion-button">MinaSidor</button>
+                      <div class="accordion-content">
+                          <ul>
+                              <li>Mina Ordrar</li>
+                              <li>Mitt Konto</li>
+                            </ul>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <button class="accordion-button">Kundtjänst</button>
+                      <div class="accordion-content">
+                          <ul>
+                              <li>Returpolicy</li>
+                              <li>Integritetspolicy</li>
+                            </ul>
+                      </div>
+                  </div>
+              </div>
+              <script src="freakyscript.js"></script>
+
+              <div class="copy"> <!--Copy right. link to #about-->
+                <p><a href="#about">&copy;Freaky Fashion</a></p>
+              </div>
+              <div class="back"><!--Go back to top-->
+                <a href="#">Back to Top</a>
+              </div>
+            </footer>
+        </body>
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="fashion" content="This is a online fashion store with all unique cool clothes"> 
+    <title>Freaky Fashion</title>
+    <!--Store icon-->
+    <link rel="icon" href="images/icon.png" type="image/storeicon">  
+    <link rel="stylesheet" a href="freaky.css"> 
+</head>
+<body>
+
+    <header>
+       <div class="head-container">
+            <div class="headitem-1">
+                <img src="images/logotype.jpg"  alt="logotype">
+            </div>
+            <div class="head-container2">
+                <div class="headitem-2">
+                    <input type="search" placeholder="Sök produkt">            <!--search products from here-->
+                </div>
+                <div class="headitem-3">
+                    <a href="http://localhost.5000/favorit/" target="_blank"><img src="images/heartblack.png" alt="favorit_icon"></a>
+                    <!--Open the link with a new tab-->
+                </div>
+                <div class="headitem-4">
+                    <a href="http://localhost.5000/shopping/" target="_blank"><img src="images/shoppingbag.png" alt="shopping_icon"></a>
+                </div>    
+            </div>
+       </div> 
+
+        <nav aria-rabel="primary-navigation">                      <!--navigater-->            
+             <ul>
+                <li>
+                    <a href="#news">Nyheter</a>
+                </li>
+                <li>
+                    <a href="#toplist">Topplistan</a>
+                </li>
+                <li>
+                    <a href="#sale">Rea</a>
+                </li>
+                <li>
+                    <a href="#campain">Kampanjer</a>
+                </li>
+            </ul>
+        </nav>   
+    </header>
+ 
+   
+    <main>
+        <section id="customer-service">            <!--Chat icon-->
+            <img src="images/chat.png" alt="chat">
+        </section>
+
+        <article class="hero">   <!--HERO-->
+            <a href="http://localhost:5000/product-details.html">
+                
+                <div class="hero-container">
+                    <div class="hero1">
+
+                        <picture> <!--picture changes by size-->
+                            <!--smaller than 640px-->
+                            <source media="(max-width: 640px)" srcset="images/puffy-jacket-small.jpg" alt="puffy-jacket-zoom">
+                            <!--bigger than 640px-->    
+                            <img src="images/puffy-jacket.jpg" alt="puffy-jacket">
+                        </picture>
+
+                    </div>
+                    <div class="hero2">
+                        <h2>Lorem ipsum dolor</h2>
+            
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, odit..Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, odit..</p>
+                    </div>
+                </div>
+            </a>                
+        </article>
+        
+        <article class="spots">
+            <div class="spots-container">
+                <div class="spots-container2">
+                    <a href="http://localhost:5000/product-details.html"><img src="images/kitty.jpg" alt="kitty-pinkjacket"></a>
+                         <span>
+                            Lorem ipsum dolor
+                        </span>
+                </div>
+
+                <div class="spots-container2">
+                    <a href="http://localhost:5000/product-details.html"><img src="images/kitty.jpg" alt="kitty-pinkjacket"></a>
+                         <span>
+                            Lorem ipsum dolor
+                        </span>
+                </div>
+
+                <div class="spots-container2">
+                    <a href="http://localhost:5000/product-details.html"> <!--Click to the product and lead to the link-->                        
+                        <img src="images/kitty.jpg" alt="kitty-pinkjacket"></a>
+                         <span>
+                            Lorem ipsum dolor
+                        </span>
+                </div>
+            </div>    
+        </article>
+
+
+        <!--PRODUCTS-->   
+        <article class="products">
+            <div class="container"> 
+                <!--link to produktkort-->              
+                <a href="http://localhost:5000/product-details.html"> 
+                    <div class="cloth-container">     
+                        <div class="blackdress-container">
+                            <!--img changes by placing the mouse over the image-->    
+                                <img src="images/blackdress.jpeg" alt="Black Dress" class="default-blackdress">
+                                <img src="images/blackdress-zoom.jpeg" alt="Hovered Black Dress" class="hover-blackdress">
+                        </div>
+                        <span class="span0">
+                             <text class="nyhet-badge">Nyhet</text> <!--NYHET badge-->
+                        </span>
+                         <span class="span1">
+                        <img src="images/heartblack.png" alt="heartblack"> <!--favorit icon-->
+                    </span> 
+                        Svart Klänning 
+                    <span class="span2">
+                        499 SEK</span>
+                    <br>
+                    <span class="span3">Levis</span>
+                </div>
+            </a>
+                
+            <a href="http://localhost:5000/product-details.html">
+                <div class="cloth-container">    
+                    <div class="blackdress-container">
+                        <!--img changes by placing the mouse over the image-->    
+                            <img src="images/blackdress.jpeg" alt="Black Dress" class="default-blackdress">
+                            <img src="images/blackdress-zoom.jpeg" alt="Hovered Black Dress" class="hover-blackdress">
+                    </div>
+                    <span class="span1">
+                        <img src="images/heart.png" alt="heart">
+                    </span>             
+                        Svart Klänning <span class="span2">
+                            499 SEK</span>
+                    <br>
+                    <span class="span3">Levis</span>
+                </div>
+            </a>    
+
+            <a href="http://localhost:5000/product-details.html">
+                <div class="cloth-container">    
+                    <div class="blackdress-container">
+                        <!--img changes by placing the mouse over the image-->    
+                            <img src="images/blackdress.jpeg" alt="Black Dress" class="default-blackdress">
+                            <img src="images/blackdress-zoom.jpeg" alt="Hovered Black Dress" class="hover-blackdress">
+                    </div>
+                    <span class="span1">
+                        <img src="images/heart.png" alt="heart">
+                    </span>             
+                        Svart Klänning <span class="span2">
+                            499 SEK</span>
+                    <br>
+                    <span class="span3">Levis</span>
+                </div>
+            </a>   
+                            
+            <a href="http://localhost:5000/product-details.html">
+                <div class="cloth-container">    
+                    <div class="blackdress-container">
+                        <!--img changes by placing the mouse over the image-->    
+                            <img src="images/blackdress.jpeg" alt="Black Dress" class="default-blackdress">
+                            <img src="images/blackdress-zoom.jpeg" alt="Hovered Black Dress" class="hover-blackdress">
+                    </div>
+                    <span class="span1">
+                        <img src="images/heart.png" alt="heart">
+                    </span>             
+                        Svart Klänning <span class="span2">
+                            499 SEK</span>
+                    <br>
+                    <span class="span3">Levis</span>
+                </div>
+            </a>   
+                            
+            <a href="http://localhost:5000/product-details.html">
+                <div class="cloth-container">    
+                    <div class="blackdress-container">
+                        <!--img changes by placing the mouse over the image-->    
+                            <img src="images/blackdress.jpeg" alt="Black Dress" class="default-blackdress">
+                            <img src="images/blackdress-zoom.jpeg" alt="Hovered Black Dress" class="hover-blackdress">
+                    </div>
+                    <span class="span1">
+                        <img src="images/heart.png" alt="heart">
+                    </span>             
+                        Svart Klänning <span class="span2">
+                            499 SEK</span>
+                    <br>
+                    <span class="span3">Levis</span>
+                </div>
+            </a>   
+                                        
+            <a href="http://localhost:5000/product-details.html">
+                <div class="cloth-container">    
+                    <div class="blackdress-container">
+                        <!--img changes by placing the mouse over the image-->    
+                            <img src="images/blackdress.jpeg" alt="Black Dress" class="default-blackdress">
+                            <img src="images/blackdress-zoom.jpeg" alt="Hovered Black Dress" class="hover-blackdress">
+                    </div>
+                    <span class="span1">
+                        <img src="images/heart.png" alt="heart">
+                    </span>             
+                        Svart Klänning <span class="span2">
+                            499 SEK</span>
+                    <br>
+                    <span class="span3">Levis</span>
+                </div>
+            </a>   
+                                        
+            <a href="http://localhost:5000/product-details.html">
+                <div class="cloth-container">    
+                    <div class="blackdress-container">
+                        <!--img changes by placing the mouse over the image-->    
+                            <img src="images/blackdress.jpeg" alt="Black Dress" class="default-blackdress">
+                            <img src="images/blackdress-zoom.jpeg" alt="Hovered Black Dress" class="hover-blackdress">
+                    </div>
+                    <span class="span1">
+                        <img src="images/heart.png" alt="heart">
+                    </span>             
+                        Svart Klänning <span class="span2">
+                            499 SEK</span>
+                    <br>
+                    <span class="span3">Levis</span>
+                </div>
+            </a>   
+                                        
+            <a href="http://localhost:5000/product-details.html">
+                <div class="cloth-container">    
+                    <div class="blackdress-container">
+                        <!--img changes by placing the mouse over the image-->    
+                            <img src="images/blackdress.jpeg" alt="Black Dress" class="default-blackdress">
+                            <img src="images/blackdress-zoom.jpeg" alt="Hovered Black Dress" class="hover-blackdress">
+                    </div>
+                    <span class="span1">
+                        <img src="images/heart.png" alt="heart">
+                    </span>             
+                        Svart Klänning <span class="span2">
+                            499 SEK</span>
+                    <br>
+                    <span class="span3">Levis</span>
+                </div>
+            </a>   
+        </article>
+
+            <aside class="side-container">
+                <ul>
+                    <li>
+                        <img src="images/global.png" alt="global">
+                        <span>Gratis frakt och returer</span>
+                    </li> 
+                    <li>
+                    <img src="images/aircraft.png" alt="aircraft">
+                    <span>Expressfrakt</span>
+                    </li> 
+                    <li>
+                        <img src="images/safe.png" alt="safe">
+                        <span>Säkra betalningar</span>
+                    </li> 
+                    <li>
+                        <img src="images/smile.png" alt="smile">
+                        <span>Nyheter varje dag</span>
+                    </li>   
+                </ul>
+            </aside>
+
+        </main>
+            
+        <footer>
+
+            <!--Accordion Komponent-->
+            <div class="accordion">
+                <div class="accordion-item" >
+                    <button class="accordion-button">Shopping</button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Vinterjackor</li>
+                            <li>Pufferjackor</li>
+                            <li>Kappa</li>
+                            <li>Trenchcoats</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button" >MinaSidor</button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Mina Ordrar</li>
+                            <li>Mitt Konto</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button" >Kundtjänst</button>
+                    <div class="accordion-content">
+                        <ul>
+                            <li>Returpolicy</li>
+                            <li>Integritetspolicy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <script src="freakyscript.js"></script>
+
+            <div class="copy">
+            <p><a href="aboutfreaky.html">&copy;Freaky Fashion</a></p>
+            </div>
+            <div class="back">
+            <a href="#">Back to Top</a>
+            </div>
+        </footer>
+    </body>
+</html>
