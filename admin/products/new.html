@@ -31,18 +31,20 @@
         <form action="ny_produkt_form">  
           <section>
             <div class="namn">
-                <label for="namn" class="name">Namn</label><br>
+                <p><label for="namn" class="name">Namn</label>
+                </p>
                 <input type="text" id="namn" name="namn" value="" placeholder="Ange Namn" autocomplete="on" required autofocus> 
             </div>
             
             <div>
-                <label for="d_message">Beskrivning</label>
-                <br>
+                <p><label for="d_message">Beskrivning</label>
+                </p>
                 <textarea name="message" id="d_message" cols="38" rows="10"></textarea>
             </div> 
 
             <div>
-              <label for="file-upload">Bild</label>
+              <p><label for="file-upload">Bild</label>
+              </p>
                <p> 
               <input type="file" id="file-upload" name="photo" 
               accept="image/*"> <!--choose file-->
@@ -50,7 +52,7 @@
             </div>
             
             <div>
-              <label for="sku">SKU</label>
+              <p><label for="sku">SKU</label></p>
               <!--product code or number-->
               <p>
                 <input type="text" id="sku" name="sku">
@@ -66,7 +68,7 @@
           </section>
 
           <section class="kategorier">
-            <legend>Kategorier</legend>
+            <h4><legend>Kategorier</legend></h4>
             <p>
               <input type="checkbox" name="kategorier" id="tshirts" value="tshirts">
               <label for="tshirts" class="kategorier">T-shirts</label>

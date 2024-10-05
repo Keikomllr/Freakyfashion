@@ -11,7 +11,7 @@ body {
  
     /*Layout*/
     .list-container {
-        display: grid;
+        display: grid; /*LAYOUT for whole page*/
         grid-template:
         "head head" 100px  /*row size*/
         "side main" 1fr 
@@ -20,7 +20,7 @@ body {
     }
     
     .header {
-        grid-area: head;
+        grid-area: head; /*Grid Area name for layout page*/
 
         background-color: black;
         color: white;
@@ -28,16 +28,18 @@ body {
     }
 
     .sidebar {
-        grid-area: side; 
+        grid-area: side; /*Grid Area name*/
         padding: 15px;
         background-color: lightgray;
     }
     
     .main {
-        grid-area: main;
+        grid-area: main; /*Grid Area name*/
         position:relative; /*for ny produkt button*/
     }
-    
+    .name{
+        padding-bottom: 5px;
+    }
       
     .nyprodukt-btn{ /*position for button*/
         position:absolute;
@@ -62,7 +64,10 @@ body {
     padding: 10px;
 }
 
-
+.main{
+    max-width: 900px; /*To make table not too wide*/
+    border:none; /*To remove the right line*/
+} 
 
   /*Product List*/
     th,td{
