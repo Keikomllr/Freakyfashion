@@ -79,7 +79,7 @@ ul
     list-style: none;
 }
 
-/*HOVER*/
+/*HOVER for NAV*/
 nav a{ 
     text-decoration: none;
     color: rgb(36, 36, 65);
@@ -110,7 +110,7 @@ aside li:hover{
 .side-list{    /*Changing the text position för ASIDE*/
     position:relative;
 }
-.side-list-text{
+.side-list-text{ 
     position:absolute;
     bottom:23px;
     left: 60px;
@@ -124,10 +124,10 @@ aside li:hover{
     z-index: 1;   /*To make first front picture*/
 }
 
-#customer-service:hover{
-    transform: scale(1.4);
+#customer-service:hover{  /*HOVER for CUSTOMER SERVICE*/
+    transform: scale(1.4); /*EXPAND SIZE*/
     transition-property: transform;
-    transition-duration: 0.5s;
+    transition-duration: 0.5s; /*SPEED*/
 }
 
 /* ----SALE ANIMATION-----*/
@@ -136,7 +136,7 @@ aside li:hover{
 }
 .sale_container  
 {
-    width:100%;
+    width:100%; /*Decide the size of container*/
     height: 60px;
     position: relative;
     background-color: #b61c1c;
@@ -145,13 +145,10 @@ aside li:hover{
     padding: 20px;
     text-align: center;
     
-    animation: expandWidth 2s forwards;
-    
+    animation: expandWidth 2s forwards; /*ANIMATION TYTE, SPEED, DIRECTION*/    
 }
 
-
-
-@keyframes expandWidth {
+@keyframes expandWidth { /*EXPAND 0 TO 100%*/
     0% {
         width: 0;
     }
@@ -160,30 +157,28 @@ aside li:hover{
     }
 }
 
-
-
-
+/*---SPOTS--*/
 .spots-container{
     margin:20px;
     padding: 10px;
     align-items: center;
     background-color: aliceblue;
    
-    display:flex;  /*spots layout*/
+    display:flex;  /*spots layout-FLEX-ROW*/
     flex-direction: row;
     img{
         width: 100%;
     }
 }
-.spots-container2{
-    position: relative;
+.spots-container2{  /*TEXT FOR SPOTS*/
+    position: relative; /*POSITION RELATIVE TO PHOTO*/
 }
-.spots-container2 > span{
-    position: absolute;
+.spots-container2 > span{  
+    position: absolute;   /*POSITION ABSOLUTE TO TEXT*/
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.4rem;
     text-align: center;
-    left: 50%;
+    left: 50%;      /*MAKE TO TEXT CENTER*/
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -324,17 +319,18 @@ aside img{
    }
 
    .accordion-item.active .accordion-content {
+    /*Accordion list can open*/
     display: block;
 }
 
  /*RESPONSIVE */   
-@media (max-width:640px){  
+@media (max-width:640px){  /*--MEDIA QUERI--Screen for less than 640px*/
     .similar{
-    display:none;  /*Similar products display off by less than 640px*/
+    display:none;  /*Similar products display off*/
    }
 }
 /*RESPONSIVE */
-@media (min-width: 640px) {  /*Screen size for more than 640px*/
+@media (min-width: 640px) {  /*--MEDIA QUERI--Screen size for more than 640px*/
     .accordion-head {
         pointer-events: none;   /* keep open the accordion and disable the button */
     }
@@ -413,7 +409,7 @@ aside img{
 
 
 /*RESPONSIVE DESIGN*/
-@media (min-width: 1024px){   /*Screen is more than 1024px*/
+@media (min-width: 1024px){   /*--MEDIA QUERI--Screen is more than 1024px*/
     .products > div {   
         grid-template-columns: repeat(4, 1fr);  /*products become 4 items per column*/
     }
@@ -426,13 +422,13 @@ aside img{
         width: 100%;
     }
 
-    .side-container > ul {
+    .side-container > ul {  /*Aside change to 1 row*/
         grid-template-columns: repeat(4,1fr);
     }
 }
 
-@media (max-width: 1024px){
-    .spots{
+@media (max-width: 1024px){ /*--MEDIA QUERI--Screen is less than 1024px*/
+    .spots{    /*Spots No display*/
         display:none;
     }
 }
@@ -506,8 +502,8 @@ aside img{
     text-align: center;
 }
 .similar_container{ 
-        display:grid;
-        grid-template-columns: repeat(3, 1fr);
+        display:grid;  /*GRID*/
+        grid-template-columns: repeat(3, 1fr); /*1 ROW 3PICS*/
         padding: 10px; 
         img{width: 100%;}
 }
@@ -533,21 +529,22 @@ aside img{
 }
 
 
-
-@media(min-width:640px){
+/*RESPONSIV DESIGN--MEDIAQUERI--*/
+@media(min-width:640px){ /*MORE THAN 640PX*/
     .detail_container {        
         display:flex;    /*wider layout*/
         flex-direction: row;  
         padding:30px;     
     }
     .detail_pic{
-        min-width: 400px;
+        min-width: 400px; /*Dont get smaller than 400px*/
     }
     .detail_text{
-        max-width: 600px;
+        max-width: 600px; /*Dont get bigger than 600px*/
     }
 }
-@media(min-width:1024px){   /*Detail product fitting to the screen size*/
+@media(min-width:1024px){   /*MORE THAN 1024PX*/
+    /*Detail product fitting to the screen size*/
     .detail_container > div{
         flex-grow: 1;
         padding:20px;
