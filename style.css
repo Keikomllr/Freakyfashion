@@ -20,7 +20,7 @@ a{   /*styles to link*/
     text-decoration: none;  /*Remove  underline for text*/
     color: inherit;   /*make blue text color to original color */
 }
-a:hover{   
+a:hover{   /*hover to all link*/
     transform: scale(1.013);
     transition-property: transform;
     transition:0.2s;
@@ -107,7 +107,14 @@ aside li:hover{
     transform:scale(1.1);
 }
 
-
+.side-list{    /*Changing the text position för ASIDE*/
+    position:relative;
+}
+.side-list-text{
+    position:absolute;
+    bottom:23px;
+    left: 60px;
+}
 
 #customer-service{
   /* Fäster elementet inom viewport*/
