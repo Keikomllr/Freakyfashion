@@ -1,14 +1,13 @@
 body {
-    
-    font-family: cursive;
+    font-family: cursive;    /*font style*/
     font-weight: 700; 
-    min-height: 100vh; 
+    min-height: 100vh;      /*viewport(screen size) 100%*/
     display: grid;
     }     
 .kategorier{
     font-weight: 100;
 }
- 
+
     /*Layout*/
     .list-container {
         display: grid; /*LAYOUT for whole page*/
@@ -86,14 +85,17 @@ body {
     tr:nth-child(even){ /*Color for 2nd and 4th row*/
         background-color: #efeded;
     }
-    td,th{
+    td,th{              
+        /*Remove table data and table heads top&bottom line*/
         border-bottom: none;
         border-top: none;
     }
-    th{
+    th{  /*Keep the table head top line of the table*/
         border-top: solid 2px;
     }
-    tr:last-child td{
+
+    tr:last-child td{  
+        /*Keep the bottom line of the table by choosing last row*/
         border-bottom:solid 2px;
     }
   

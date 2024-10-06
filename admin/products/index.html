@@ -13,14 +13,13 @@
 </head>
 
 <body>
-    <div class="list-container">
+    <div class="list-container"> <!--Container för whole page LAYOUT-->
     
         <div class="item header">
             <header class="listprodukt_header">
                 <h1>Administration</h1>
             </header> 
         </div>
-
         
          <div class="item sidebar">
             <aside>
@@ -28,24 +27,25 @@
             </aside>
         </div>
 
-        <section class="item main"> <!--MAIN-->                        
+        <main class="item main"> <!--MAIN-->                        
             
             <h2>Produkter</h2>
             <!--Submit button for new product -->
                 <div class="nyprodukt-btn">
                     <a href="#nyaprodukter"><input type="submit" name="btn_confirm" value="Ny produkt" class="button-6"></a>                  
                 </div>
-            <table  class="ny_produkt_form" >
-                
-                <tbody> 
-                    <tr>
-                        <th>Namn</th>
+
+            <!-----PRODUCT TABLE----->
+            <table  class="ny_produkt_form" >                
+                <tbody>                      <!--Table body -Whole table-->       
+                    <tr>                     <!--Table row  -horizontel-->
+                        <th>Namn</th>        <!--Table head -top-->
                         <th>SKU</th>
                         <th>Pris</th>
                     </tr>
                     
-                    <tr>
-                        <td>Svart T-Shirt</td>
+                    <tr>   
+                        <td>Svart T-Shirt</td>   <!--Table data-->
                         <td>AAA111</td>
                         <td>199</td>
                     </tr>
@@ -56,13 +56,13 @@
                         <td>199</td>
                     </tr>
                     <tr>
-                        <td rowspan="2">...</td>
+                        <td rowspan="2">...</td> <!--double row-->
                         <td rowspan="2"></td>
                         <td rowspan="2"></td>
                     </tr>
                 </tbody>
              </table>
-        </section>
+        </main>
         
       <section class="item footer">
         <footer>
