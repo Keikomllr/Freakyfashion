@@ -221,6 +221,41 @@ aside li:hover{
     }
 }
 
+/*-----BLACK DRESS CHANGE IMG BY MOUSE------*/
+.blackdress-container{ 
+    position: relative;
+    width: 100%;     /*Set the parent element width to 100%*/
+    max-width: 800px;   /*max size*/
+    min-width: 200px;
+    height: auto;      /*Automatically changes by width*/
+    aspect-ratio: 2/ 3;   /*For not to distroy the img shape*/
+    margin:10px;        
+    }
+.default-blackdress, .hover-blackdress{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease; /**/
+    object-fit: cover; /*Make img fits in parents element and follow the aspect ratio*/
+}
+
+.default-blackdress{ 
+    opacity: 1;  /*Img 1: Visible*/
+}
+
+.hover-blackdress{
+    opacity:0;   /*Img 2: Invisible*/
+}
+
+/*--- CHANGE VISIBLE SETTING----*/
+.blackdress-container:hover .default-blackdress{ /*BY MOUSE (Hover) Img 1: Invisible.*/
+    opacity:0;   
+}
+
+.blackdress-container:hover .hover-blackdress{  /*BY MOUSE (Hover) Img 2: Visible*/
+    opacity: 1;
+}
+
 
  /*Nyhet badge*/
 .nyhet-badge{
@@ -432,43 +467,6 @@ aside img{
         display:none;
     }
 }
-
-/*BLACK DRESS CHANGE IMG BY MOUSE*/
-.blackdress-container{ 
-    position: relative;
-    width: 100%;     /*Set the parent element width to 100%*/
-    max-width: 800px;   /*max size*/
-    min-width: 200px;
-    height: auto;      /*Automatically changes by width*/
-    aspect-ratio: 2/ 3;   /*For not to distroy the img shape*/
-    margin:10px;        
-    }
-.default-blackdress, .hover-blackdress{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: opacity 0.3s ease; /**/
-    object-fit: cover; /*Make img fits in parents element and follow the aspect ratio*/
-}
-
-.default-blackdress{ 
-    opacity: 1;  /*Img 1: Visible*/
-}
-
-.hover-blackdress{
-    opacity:0;   /*Img 2: Invisible*/
-}
-
-/*--- CHANGE VISIBLE SETTING----*/
-.blackdress-container:hover .default-blackdress{ /*BY MOUSE (Hover) Img 1: Invisible.*/
-    opacity:0;   
-}
-
-.blackdress-container:hover .hover-blackdress{  /*BY MOUSE (Hover) Img 2: Visible*/
-    opacity: 1;
-}
-
-
 
 
 
